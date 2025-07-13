@@ -40,6 +40,66 @@ OpenRouter CLI is a terminal-based AI assistant designed specifically for softwa
 #### Download Binaries
 Visit our [releases page](https://github.com/knoxai/openrouter-cli/releases) and download the appropriate binary for your platform.
 
+### 1. Choose Your Binary
+
+Select the appropriate binary for your platform:
+
+```bash
+# For macOS (Intel)
+./dist/or-darwin-amd64
+
+# For macOS (Apple Silicon)
+./dist/or-darwin-arm64
+
+# For Linux (Intel/AMD)
+./dist/or-linux-amd64
+
+# For Linux (ARM)
+./dist/or-linux-arm64
+
+# For Windows
+./dist/or-windows-amd64.exe
+```
+
+### 2. Easy Installation Methods
+
+#### Option A: Copy to System PATH (Recommended)
+
+```bash
+# For macOS/Linux - copy to a directory in your PATH
+sudo cp dist/or-darwin-arm64 /usr/local/bin/or
+
+# Make executable
+sudo chmod +x /usr/local/bin/or
+
+# Now you can use it from anywhere
+or
+```
+
+#### Option B: Add to PATH
+
+```bash
+# Add the dist directory to your PATH
+export PATH="$PWD/dist:$PATH"
+
+# Add to your shell profile for permanent access
+echo 'export PATH="$PWD/dist:$PATH"' >> ~/.bashrc  # for bash
+echo 'export PATH="$PWD/dist:$PATH"' >> ~/.zshrc   # for zsh
+``
+
+### 3. First-Time Setup
+
+#### Set Your API Key
+
+```bash
+# Set OpenRouter API key
+export OPENROUTER_API_KEY="your-api-key-here"
+
+# Add to your shell profile for permanent access
+echo 'export OPENROUTER_API_KEY="your-key-here"' >> ~/.bashrc  # for bash
+echo 'export OPENROUTER_API_KEY="your-key-here"' >> ~/.zshrc   # for zsh
+```
+
 ### Configuration
 
 1. **Set your API key**:
